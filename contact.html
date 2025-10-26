@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Cherry Collection</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">CHERRY COLLECTION</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <h1>Contact</h1>
+    <p>If you'd like to get in touch about this project, email: <a href="mailto:hasini@example.com">hasini@example.com</a></p>
+    <form id="contact-form">
+      <label>Name<br><input type="text" id="name" required></label><br>
+      <label>Email<br><input type="email" id="email" required></label><br>
+      <label>Message<br><textarea id="message" rows="6" required></textarea></label><br>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="contact-feedback" style="display:none;"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Cherry Collection — Project by Hasini</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      // simple front-end demo: show feedback (no backend)
+      document.getElementById('contact-feedback').style.display = 'block';
+      document.getElementById('contact-feedback').textContent = 'Thanks, your message has been recorded (demo).';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

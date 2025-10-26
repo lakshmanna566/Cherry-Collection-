@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cherry Collection — Project by Hasini</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">CHERRY COLLECTION</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/IMG_20251026_060319.png" alt="Banner" class="hero-image">
+    <div class="hero-text">
+      <h1>The Cherry Collection</h1>
+      <p>Sweet, Seductive, and Bold. Discover the new look.</p>
+      <button id="shop-now">Shop Now</button>
+    </div>
+  </section>
+
+  <div class="project-by">Project by Hasini</div>
+
+  <section id="shop" class="featured">
+    <h2>Featured Items</h2>
+    <div id="products-container" class="product-grid"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="product-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <img id="modal-img" src="" alt="">
+      <div>
+        <h3 id="modal-title"></h3>
+        <p id="modal-price"></p>
+        <p id="modal-desc"></p>
+        <div class="modal-actions">
+          <button id="modal-add">Add to Cart</button>
+          <button id="modal-close-2">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Cherry Collection — Project by Hasini</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
